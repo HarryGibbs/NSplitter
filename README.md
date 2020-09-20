@@ -1,7 +1,7 @@
 # NSplitter
 <b><h2>Description:</h2></b>
 <p>
-NSplitter is a Python program which takes an alignment of the coding regions of a set of homologous genes or genomes.  It identifies the non-silent (non-synonymous), silent (synonymous) and unchanged codons, and outputs them in three separate files; "ns", "s" and "u". These, like the input alignment are in FAS/FASTA/txt file format, allowing them to be opened by programs such as BioEdit and text editing software such as Microsoft Word and Notepad. NSplitter also outputs a fourth file called 'position-values.txt' which contains a string of values, '0', '1' or '2', for each codon in the alignment; '0' means that that codon position has no-differences in all the sequences, '1' means that there is at least one or more changes in that codon position, but all are silent, and '2' meaning that at least one of the changes in that codon position is non-silent irrespective of whether there are any silent changes too. This program is not specific to Windows or Mac, and only requires the download of the program and the presence of Python (steps detailed below).<br/>
+NSplitter is a Python program which takes an alignment of the coding regions of a set of homologous genes or genomes.  It identifies the non-silent (non-synonymous), silent (synonymous) and unchanged codons, and outputs them in three separate files; "ns", "s" and "u". These, like the input alignment are in FAS/FASTA/txt file format, allowing them to be opened by programs such as BioEdit and text editing software such as Microsoft Word and Notepad. NSplitter also outputs a fourth file called 'position-values.txt' which contains a string of values, '0', '1' or '2', for each codon in the alignment; '0' means that that codon position has no-differences in all the sequences, '1' means that there is at least one or more changes in that codon position, but all are silent, and '2' meaning that at least one of the changes in that codon position is non-silent irrespective of whether there are any silent changes too. Please note that the program first converts all 'U's to 'T's, and therefore the output files will be of the T version of all codons. This program is not specific to Windows or Mac, and only requires the download of the program and the presence of Python (steps detailed below).<br/>
 For a benchmark, this program has compared an alignment of 20 sequences, each being 30,000 bases long, in under 10 seconds.
 </p>
 
@@ -25,27 +25,27 @@ For both Mac and Windows a black box will appear with a growing string of number
 
 <b><h2>Required nomenclature:</h2></b>
 <p>
-1 : ["GCT", "GCC", "GCA", "GCG", "GCU"] encoding alanine (A),<br/>
-2 : ["TGT", "TGC", "UGU", "UGC"] encoding cysteine (C),<br/>
-3 : ["GAT", "GAC", "GAU"] encoding aspartic acid (D),<br/>
+1 : ["GCT", "GCC", "GCA", "GCG"] encoding alanine (A),<br/>
+2 : ["TGT", "TGC"] encoding cysteine (C),<br/>
+3 : ["GAT", "GAC"] encoding aspartic acid (D),<br/>
 4 : ["GAA", "GAG"] encoding glutamic acid (E),<br/>
-5 : ["TTT", "TTC", "UUU", "UUC"] encoding phenylalanine (F),<br/>
-6 : ["GGT", "GGC", "GGA", "GGG", "GGU"] encoding glycine (G),<br/>
-7 : ["CAT", "CAC", "CAU"] encoding histidine (H),<br/>
-8 : ["ATT", "ATC", "ATA", "AUU", "AUC", "AUA"] encoding isoleucine (I),<br/>
+5 : ["TTT", "TTC"] encoding phenylalanine (F),<br/>
+6 : ["GGT", "GGC", "GGA", "GGG"] encoding glycine (G),<br/>
+7 : ["CAT", "CAC"] encoding histidine (H),<br/>
+8 : ["ATT", "ATC", "ATA"] encoding isoleucine (I),<br/>
 9 : ["AAA", "AAG"] encoding lysine (K),<br/>
-10 : ["TTG", "TTA", "CTT", "CTC", "CTA", "CTG", "UUG", "UUA", "CUU", "CUC", "CUA", "CUG"], encoding leucine (L),<br/>
-11 : ["ATG", "AUG"] encoding methionine (M),<br/>
-12 : ["AAT", "AAC", "AAU"] encoding asparagine (N),<br/>
-13 : ["CCT", "CCC", "CCA", "CCG", "CCU"] encoding proline (P),<br/>
+10 : ["TTG", "TTA", "CTT", "CTC", "CTA", "CTG"], encoding leucine (L),<br/>
+11 : ["ATG"] encoding methionine (M),<br/>
+12 : ["AAT", "AAC"] encoding asparagine (N),<br/>
+13 : ["CCT", "CCC", "CCA", "CCG"] encoding proline (P),<br/>
 14 : ["CAA", "CAG"] encoding glutamine (Q),<br/>
-15 : ["CGT", "CGC", "CGA", "CGG", "AGA", "AGG", "CGU"] encoding arginine (R),<br/>
-16 : ["TCT", "TCC", "TCA", "TCG", "AGT", "AGC", "UCU", "UCC", "UCA", "UCG", "AGU"] encoding serine (S),<br/>
-17 : ["ACT", "ACC", "ACA", "ACG", "ACU"] encoding threonine (T),<br/>
-18 : ["GTT", "GTC", "GTA", "GTG", "GUU", "GUC", "GUA", "GUG"] encoding valine (V),<br/>
-19 : ["TGG", "UGG"] encoding tryptophan (W),<br/>
-20 : ["TAT", "TAC", "UAU", "UAC"] encoding tyrosine (Y),<br/>
-21 : ["TAA", "TAG", "TGA", "UAA", "UAG", "UGA"] encoding 'termination' (*),<br/>
+15 : ["CGT", "CGC", "CGA", "CGG", "AGA", "AGG"] encoding arginine (R),<br/>
+16 : ["TCT", "TCC", "TCA", "TCG", "AGT", "AGC"] encoding serine (S),<br/>
+17 : ["ACT", "ACC", "ACA", "ACG"] encoding threonine (T),<br/>
+18 : ["GTT", "GTC", "GTA", "GTG"] encoding valine (V),<br/>
+19 : ["TGG"] encoding tryptophan (W),<br/>
+20 : ["TAT", "TAC"] encoding tyrosine (Y),<br/>
+21 : ["TAA", "TAG", "TGA"] encoding 'termination' (*),<br/>
 22 : ["---", "~~~"]<br/>
 </p>
 
