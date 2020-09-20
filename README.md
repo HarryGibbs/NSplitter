@@ -45,7 +45,7 @@ For both Mac and Windows a black box will appear with a growing string of number
 18 : ["GTT", "GTC", "GTA", "GTG", "GUU", "GUC", "GUA", "GUG"] encoding valine (V),<br/>
 19 : ["TGG", "UGG"] encoding tryptophan (W),<br/>
 20 : ["TAT", "TAC", "UAU", "UAC"] encoding tyrosine (Y),<br/>
-21 : ["TAA", "TAG", "UAA", "UAG"] encoding 'termination' (*),<br/>
+21 : ["TAA", "TAG", "TGA", "UAA", "UAG", "UGA"] encoding 'termination' (*),<br/>
 22 : ["---", "~~~"]<br/>
 </p>
 
