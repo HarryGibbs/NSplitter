@@ -8,7 +8,7 @@ For a benchmark, this program has compared an alignment of 20 sequences, each be
 <b><h2>Installation:</h2></b>
 <p>
 First, Python must be installed. It can be found at https://www.python.org/downloads/. When downloaded, there will be a setup prompt to help set it up on your computer.
-Once this Python shell is successfully installed, download the NSplitter file system from the GitHub repository. Make sure that when it is downloaded, you have extracted the files and put them somewhere accessible within your computer (when moving the file system, keep all the files and folders contained within the folder, which is called “NSplitter” by default).  
+Once this Python shell is successfully installed, download the NSplitter file system from this GitHub repository. This can be found by going to the top of this page, clicking the green button named "Code" and clicking the option "Download Zip". When this is downloaded, it will be a zip file and within this Zip file will be both this README file, and another Zip file. You will need to extract the inside zip file to somewhere accessible on your computer, the program will not work properly if it is not extracted. Extracting can be done by right clicking on the file, and clicking "Extract All" for Windows, or double clicking the folder for Mac. When moving the file system, keep all the files and folders contained within the folder, which is called “NSplitter” by default.  
 </p>
 
 <b><h2>Usage:</h2></b>
